@@ -1,0 +1,38 @@
+git add .
+git commit -m "Atualizando pasta"
+git push
+
+
+configurações para uma nova estação de trabalho
+
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+
+# 1. Inicia o repositório local
+git init
+
+# 2. Adiciona todos os arquivos da pasta
+git add .
+
+# 3. Faz o commit dos arquivos
+git commit -m "Primeiro commit: adicionando a pasta"
+
+# 4. Define a branch principal como main (recomendado)
+git branch -M main
+
+# 5. Adiciona o link do seu repositório remoto (substitua pela sua URL)
+git remote add origin https://github.com
+
+# 6. Sobe os arquivos para o GitHub
+git push -u origin main
+
+
+conflito de pastas já existentes no repositorio, tipo readme , .gitignore.
+Execute:
+
+git pull origin main --rebase
+
+Depois:
+
+git push -u origin main
